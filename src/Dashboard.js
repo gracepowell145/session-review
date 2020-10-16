@@ -1,10 +1,14 @@
 import React from 'react';
 import axios from 'axios'
+import Header from './Header'
 
 function Dashboard() {
   return (
     <div className="dashboard">
-      this is the dashboard
+        <Header/>
+      <p>
+          this is the dashboard
+      </p>
     </div>
   );
 }

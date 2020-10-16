@@ -10,11 +10,10 @@ function Register(props) {
         const { email, password } = inputs
         axios.post('/auth/register', { email, password }).then(res => {
             props.history.push('/dash')
-        })
+        }).catch(err => alert('email or password is incorrect'))
     }
     const handleChange = (e) => {
         const { name, value } = e.target
-        // console.log(e.target)
         setInput({ ...inputs, [name]: value })
     }
     return (
