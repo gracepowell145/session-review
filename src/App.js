@@ -3,7 +3,7 @@ import './App.css';
 import Routes from './Routes'
 
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Routes/>
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+
